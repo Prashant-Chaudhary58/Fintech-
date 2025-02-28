@@ -57,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="-$" />
+                    android:text="-NPR" />
 
                 <EditText
                     android:id="@+id/etAmount"
@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
                     android:focusable="true"
-                    android:text="130"
+                    android:text="1300"
                     android:background="@android:color/transparent" >
                 </EditText>
 
@@ -132,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Add Record"
+                android:text="Add EXPENSE"
                 style="@style/Widget.MaterialComponents.Button" />
 
         </LinearLayout>

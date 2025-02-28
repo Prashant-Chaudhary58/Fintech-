@@ -46,7 +46,7 @@
                 android:id="@+id/transactionAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12000 PKR"
+                android:text="12000 NPR"
                 android:textSize="14sp"
                 style="@style/TextAppearance.HeadLine1Bold"
                 android:textColor="?attr/colorOnSurface"

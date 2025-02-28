@@ -56,14 +56,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="-$" />
+                    android:text="-NPR" />
 
                 <EditText
                     android:id="@+id/Id"
                     style="@style/TextAppearance.AmountExpense"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="130"
+                    android:text="1300"
                     android:background="@android:color/transparent" >
                 </EditText>
 
