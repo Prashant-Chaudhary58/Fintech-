@@ -58,7 +58,7 @@ class ProfileFragment : Fragment() {
             val name = binding.name.text.toString()
             var currency = binding.currencySelector.text.toString()
 
-            currency = if(currency.equals("PKR",true)){
+            currency = if(currency.equals("NPR",true)){
                 "Rs"
             } else if(currency.equals("INR",true)){
                 "₹"
@@ -80,13 +80,13 @@ class ProfileFragment : Fragment() {
     private fun observeViewModel() {
         profileViewModel.profileData.observe(viewLifecycleOwner, Observer { data ->
             binding.name.setText(data["name"])
-            val currencies = listOf("USD", "EUR", "PKR", "INR", "GBP").toMutableList()
+            val currencies = listOf("USD", "EUR", "NPR", "INR", "GBP").toMutableList()
             binding.currencySelector.setAdapter(
                 ArrayAdapter(requireContext(), R.layout.dropdown_menu_popup_item, currencies))
 
             var selectedCurrency = profileViewModel.getCurrency()
             if(selectedCurrency .equals("Rs")){
-                selectedCurrency  = "PKR"
+                selectedCurrency  = "NPR"
             }
             else if(selectedCurrency .equals("₹")){
                 selectedCurrency  = "INR"
